@@ -1,6 +1,6 @@
 ﻿namespace Bookreader.Domain.Entities;
 
-public class Users : Human
+public class User : Human
 {
     public string PhoneNumber { get; set; } = String.Empty;
 

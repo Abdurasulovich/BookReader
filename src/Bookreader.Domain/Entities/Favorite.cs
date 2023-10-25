@@ -1,6 +1,6 @@
 ﻿namespace Bookreader.Domain.Entities;
 
-public class Favorites : Auditable
+public class Favorite : Auditable
 {
     public long UserId { get; set; }
     

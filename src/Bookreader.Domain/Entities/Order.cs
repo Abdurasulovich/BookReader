@@ -2,7 +2,7 @@
 
 namespace Bookreader.Domain.Entities;
 
-public class Orders
+public class Order
 {
     public long OrderNumber { get; set; }
     

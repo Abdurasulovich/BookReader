@@ -28,4 +28,6 @@ public class Book : Auditable
     public long CountOfPage { get; set; }
 
     public string Cover { get; set; } = String.Empty;
+    
+    public long AuthorId { get; set; }
 }

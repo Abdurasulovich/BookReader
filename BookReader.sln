@@ -5,12 +5,22 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{05BBC2FF-7A9D-4ED3-9595-6A3F8BC93BE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookreader.DataAccess", "src\Bookreader.DataAccess\Bookreader.DataAccess.csproj", "{864ECFBA-B9F1-496A-9962-27CCB9C918F6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9CA78546-AC96-4884-9752-CB4E39A2A027} = {9CA78546-AC96-4884-9752-CB4E39A2A027}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookreader.Domain", "src\Bookreader.Domain\Bookreader.Domain.csproj", "{9CA78546-AC96-4884-9752-CB4E39A2A027}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookreader.Service", "src\Bookreader.Service\Bookreader.Service.csproj", "{8F014197-47E4-485C-A4A7-975B19A0DF87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9CA78546-AC96-4884-9752-CB4E39A2A027} = {9CA78546-AC96-4884-9752-CB4E39A2A027}
+		{864ECFBA-B9F1-496A-9962-27CCB9C918F6} = {864ECFBA-B9F1-496A-9962-27CCB9C918F6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookreader.WebApi", "src\Bookreader.WebApi\Bookreader.WebApi.csproj", "{C9982BC1-E882-4195-8414-EAA2C97DD6FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F014197-47E4-485C-A4A7-975B19A0DF87} = {8F014197-47E4-485C-A4A7-975B19A0DF87}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
