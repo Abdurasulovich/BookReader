@@ -108,8 +108,23 @@ public class BasketRepository : BaseRepository, IBasketRepository
         }
     }
 
-    public Task<IList<Basket>> GetAllAsync(PaginationParams @params)
+    public async Task<IList<Basket>> GetAllAsync(PaginationParams @params)
     {
-        throw new NotImplementedException();
+        try
+        {
+            await _connection.OpenAsync();
+            var query = "SELECT * FROM basket ORDER BY id DESC " +
+                        $"OFFSET {@params.GetSkipCount()} LIMIT {@params.PageSize}";
+            var result = (await _connection.QueryAsync<Basket>(query)).ToList();
+            return result;
+        }
+        catch
+        {
+            return new List<Basket>();
+        }
+        finally
+        {
+            await _connection.CloseAsync();
+        }
     }
 }

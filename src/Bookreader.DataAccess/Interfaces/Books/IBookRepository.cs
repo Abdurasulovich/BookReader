@@ -9,7 +9,7 @@ public interface IBookRepository : IRepository<Book, Book>,
 {
     public Task<IList<Book>> GetAllByCategoryAsync(long categoryId, PaginationParams @params);
 
-    public Task<IList<Book>> GetAllByBookNameAsync(string bookName, PaginationParams @params);
+    // public Task<IList<Book>> GetAllByBookNameAsync(string bookName, PaginationParams @params);
 
     public Task<IList<Book>> GetAllByAuthorIdAsync(string authorId, PaginationParams @params);
 }

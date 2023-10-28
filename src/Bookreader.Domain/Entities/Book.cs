@@ -19,7 +19,7 @@ public class Book : Auditable
 
     public string ISBN { get; set; } = String.Empty;
     
-    public WritingType WritingTypeId { get; set; }
+    public WritingtypeEnum WritingTypeId { get; set; }
     
     public DateTime Year { get; set; }
     

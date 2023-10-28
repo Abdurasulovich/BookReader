@@ -26,4 +26,6 @@ public class Order
     
     public float TotalPrice { get; set; }
     
+    public int OrderCount { get; set; }
+    
 }
